@@ -117,6 +117,16 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     color: #cbd5e1 !important;
 }
+@media screen and (max-width: 768px) {
+    #colorlib-hero .slider-text-inner h1 {
+        font-size: 38px !important;
+        margin-bottom: 15px !important;
+    }
+    #colorlib-hero .slider-text-inner h2 {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+    }
+}
 
 /* Premium Buttons */
 .btn-learn, .btn-hire, .btn-primary {
@@ -443,3 +453,442 @@ h1, h2, h3, h4, h5, h6 {
         transform: translate3d(0, 0, 0);
     }
 }
+
+/* Custom Additions for Project, Education & Components */
+
+/* Profile Image Glowing Ring */
+.author-img {
+    border: 4px solid rgba(56, 189, 248, 0.3) !important;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2) !important;
+    transition: all 0.5s ease-in-out !important;
+}
+.author-img:hover {
+    border-color: #c084fc !important;
+    box-shadow: 0 0 30px rgba(192, 132, 252, 0.4) !important;
+    transform: scale(1.05);
+}
+
+/* Glassmorphism Navigation Drawer Toggle */
+.colorlib-nav-toggle {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+}
+
+/* Counter Metric Styling Suffix */
+.counter-suffix {
+    font-size: 50px !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+    margin-left: 2px;
+    text-shadow: 0 0 20px rgba(56,189,248,0.5);
+    font-family: 'Outfit', sans-serif !important;
+    vertical-align: middle;
+}
+
+/* Modern Education Grid Cards */
+.education-card {
+    background: rgba(30, 41, 59, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    padding: 30px !important;
+    margin-bottom: 30px !important;
+    transition: all 0.4s ease !important;
+    height: 100%;
+}
+.education-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(56, 189, 248, 0.3) !important;
+    background: rgba(30, 41, 59, 0.6) !important;
+}
+.education-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(56, 189, 248, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.education-icon i {
+    font-size: 24px;
+    color: #38bdf8;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+.education-degree {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+    color: #f8fafc !important;
+}
+.education-institution {
+    font-size: 14px !important;
+    color: #818cf8 !important;
+    margin-bottom: 12px !important;
+    font-weight: 500 !important;
+}
+.education-duration {
+    font-size: 12px;
+    color: #cbd5e1;
+    background: rgba(56, 189, 248, 0.15);
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.education-details {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 0;
+}
+
+/* Modern Project Grid Cards */
+.project-card {
+    background: rgba(30, 41, 59, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    padding: 30px !important;
+    transition: all 0.4s ease !important;
+    height: 100%;
+}
+.project-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
+    border-color: rgba(192, 132, 252, 0.4) !important;
+    background: rgba(30, 41, 59, 0.6) !important;
+}
+.project-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+.project-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(192, 132, 252, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-icon i {
+    font-size: 20px;
+    color: #c084fc;
+    text-shadow: 0 0 15px rgba(192, 132, 252, 0.4);
+}
+.project-title {
+    font-size: 20px !important;
+    margin: 0 !important;
+    color: #f8fafc !important;
+}
+.project-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tech-tag {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.tag-laravel {
+    background: rgba(239, 68, 68, 0.1) !important;
+    color: #f87171 !important;
+    border-color: rgba(239, 68, 68, 0.2) !important;
+}
+.tag-react {
+    background: rgba(6, 182, 212, 0.1) !important;
+    color: #22d3ee !important;
+    border-color: rgba(6, 182, 212, 0.2) !important;
+}
+.tag-tailwind {
+    background: rgba(20, 184, 166, 0.1) !important;
+    color: #2dd4bf !important;
+    border-color: rgba(20, 184, 166, 0.2) !important;
+}
+.tag-jquery {
+    background: rgba(59, 130, 246, 0.1) !important;
+    color: #60a5fa !important;
+    border-color: rgba(59, 130, 246, 0.2) !important;
+}
+.tag-ajax {
+    background: rgba(139, 92, 246, 0.1) !important;
+    color: #a78bfa !important;
+    border-color: rgba(139, 92, 246, 0.2) !important;
+}
+.tag-api {
+    background: rgba(236, 72, 153, 0.1) !important;
+    color: #f472b6 !important;
+    border-color: rgba(236, 72, 153, 0.2) !important;
+}
+.tag-bootstrap {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: #c084fc !important;
+    border-color: rgba(168, 85, 247, 0.2) !important;
+}
+.tag-mysql {
+    background: rgba(245, 158, 11, 0.1) !important;
+    color: #fbbf24 !important;
+    border-color: rgba(245, 158, 11, 0.2) !important;
+}
+.tag-python {
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: #34d399 !important;
+    border-color: rgba(16, 185, 129, 0.2) !important;
+}
+.tag-ai {
+    background: rgba(99, 102, 241, 0.1) !important;
+    color: #818cf8 !important;
+    border-color: rgba(99, 102, 241, 0.2) !important;
+}
+
+/* Global Smooth Scroll */
+html {
+    scroll-behavior: smooth !important;
+}
+
+/* Fix Hero Slider Height & Layout on All Devices */
+#colorlib-hero, 
+#colorlib-hero .flexslider, 
+#colorlib-hero .slides, 
+#colorlib-hero .slides li, 
+#colorlib-hero .slider-text {
+    height: 100vh !important;
+    min-height: 600px !important;
+}
+#colorlib-hero .slider-text-inner {
+    height: 100vh !important;
+    min-height: 600px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Native CSS Animations for Hero Slider Texts */
+@keyframes heroFadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes heroFadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Base state: transparent until slide is active */
+#colorlib-hero .flexslider .slides li .slider-text-inner h1,
+#colorlib-hero .flexslider .slides li .slider-text-inner h2,
+#colorlib-hero .flexslider .slides li .slider-text-inner p {
+    opacity: 0;
+}
+
+/* Active slide animations */
+#colorlib-hero .flexslider .slides li.flex-active-slide .slider-text-inner h1 {
+    animation: heroFadeInDown 1s forwards 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#colorlib-hero .flexslider .slides li.flex-active-slide .slider-text-inner h2 {
+    animation: heroFadeInUp 1s forwards 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#colorlib-hero .flexslider .slides li.flex-active-slide .slider-text-inner p {
+    animation: heroFadeInUp 1s forwards 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Custom Interactive Glowing Cursor */
+@media (pointer: fine) {
+    .custom-cursor-dot, .custom-cursor-outline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 99999;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s, opacity 0.3s;
+    }
+    
+    .custom-cursor-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #38bdf8;
+        box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+    }
+    
+    .custom-cursor-outline {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(192, 132, 252, 0.4);
+        box-shadow: 0 0 15px rgba(192, 132, 252, 0.2);
+    }
+    
+    /* Hover States for Interactive Elements */
+    .custom-cursor-dot.cursor-hover {
+        width: 12px;
+        height: 12px;
+        background-color: #c084fc;
+        box-shadow: 0 0 15px rgba(192, 132, 252, 1);
+    }
+    
+    .custom-cursor-outline.cursor-hover {
+        width: 60px;
+        height: 60px;
+        border-color: rgba(56, 189, 248, 0.8);
+        background-color: rgba(56, 189, 248, 0.05);
+        box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+    }
+    
+    /* Override defaults for interactive layout */
+    body {
+        cursor: none;
+    }
+    a, button, [role="button"], input[type="submit"], select, textarea {
+        cursor: none !important;
+    }
+}
+
+/* Sidebar Footer visibility override */
+#colorlib-aside .colorlib-footer,
+#colorlib-aside .colorlib-footer p,
+#colorlib-aside .colorlib-footer small {
+    color: #94a3b8 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+#colorlib-aside .colorlib-footer a {
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+    transition: color 0.3s ease;
+}
+#colorlib-aside .colorlib-footer a:hover {
+    color: #c084fc !important;
+}
+
+/* Comprehensive Mobile Layout Optimizations */
+@media screen and (max-width: 768px) {
+    /* 1. Prevent Horizontal Scroll & Fix Bleeding Margins */
+    .colorlib-narrow-content {
+        padding: 0 20px !important;
+    }
+    
+    /* 2. Fix Counter Columns Spacing When Stacked */
+    #colorlib-counter .col-md-3 {
+        margin-bottom: 40px !important;
+    }
+    #colorlib-counter .col-md-3:last-child {
+        margin-bottom: 0 !important;
+    }
+    .colorlib-counter {
+        font-size: 40px !important;
+    }
+    .counter-suffix {
+        font-size: 35px !important;
+    }
+    .colorlib-counter-label {
+        font-size: 11px !important;
+        letter-spacing: 2px !important;
+    }
+
+    /* 3. Education & Project Cards Padding Adjustment */
+    .project-card, .education-card {
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    /* 4. Experience Timeline Compaction */
+    .timeline-centered:before {
+        margin-left: 15px !important;
+    }
+    .timeline-centered .timeline-entry {
+        margin-left: 15px !important;
+    }
+    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+        margin-left: 45px !important;
+        padding: 18px !important;
+    }
+    .timeline-icon {
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px !important;
+    }
+    .timeline-icon i {
+        font-size: 14px !important;
+    }
+    .timeline-label h2 {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+    }
+    .timeline-label h2 span {
+        display: block !important;
+        margin-top: 5px !important;
+        font-size: 12px !important;
+    }
+
+    /* 5. Contact Info Block Optimizations */
+    .colorlib-feature {
+        padding: 15px !important;
+        margin-bottom: 15px !important;
+        gap: 15px !important;
+    }
+    .colorlib-feature .colorlib-icon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .colorlib-feature .colorlib-icon i {
+        font-size: 22px !important;
+    }
+    .colorlib-feature .colorlib-text p {
+        font-size: 14px !important;
+    }
+    
+    /* 6. Section Padding & Headings */
+    .colorlib-experience,
+    .colorlib-skills,
+    .colorlib-education,
+    .colorlib-blog,
+    .colorlib-work,
+    .colorlib-about,
+    .colorlib-services,
+    .colorlib-contact {
+        padding-top: 3em !important;
+        padding-bottom: 3em !important;
+    }
+    .colorlib-heading {
+        font-size: 24px !important;
+        letter-spacing: 2px !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
