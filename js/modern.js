@@ -26,16 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
     timelines.forEach(timeline => {
       const rect = timeline.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
-      
+
       const entryThreshold = viewportHeight * 0.9;
       const exitThreshold = viewportHeight * 0.15;
-      
+
       const totalDist = entryThreshold - exitThreshold;
       const progressDist = entryThreshold - rect.top;
-      
+
       let percent = (progressDist / (rect.height + totalDist - rect.height)) * 100;
       percent = Math.min(Math.max(percent, 0), 100);
-      
+
       timeline.style.setProperty("--scroll-percent", `${percent}%`);
     });
   };
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
       if (targetId === "#") return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // --- Scroll Reveal Animation (Intersection Observer) ---
   const revealElements = document.querySelectorAll(".reveal-on-scroll");
-  
+
   const revealObserverOptions = {
     root: null,
     rootMargin: "0px 0px -18% 0px", // Trigger slightly higher up, making items appear sequentially as you scroll
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("reveal-active");
-        
+
         // Trigger progress bar animation if inside a skill card
         if (entry.target.classList.contains("skill-card")) {
           const fill = entry.target.querySelector(".skill-progress-fill");
@@ -160,10 +160,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const updateCount = (currentTime) => {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        
+
         // Ease out quad formula
         const easeProgress = progress * (2 - progress);
-        
+
         const currentValue = Math.floor(easeProgress * target);
         counter.textContent = currentValue + suffix;
 
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("mousemove", (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      
+
       // Update dot position instantly
       cursorDot.style.left = `${mouseX}px`;
       cursorDot.style.top = `${mouseY}px`;
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Animate trailing outline smoothly
     const animateOutline = () => {
       // Linear interpolation (lerp) for smooth lag effect
-      const ease = 0.12; 
+      const ease = 0.12;
       outlineX += (mouseX - outlineX) * ease;
       outlineY += (mouseY - outlineY) * ease;
 
